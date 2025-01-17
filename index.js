@@ -1575,9 +1575,9 @@ function generateColor() {
     else if (modeStatus == 'white') {
         // c = HSVtoRGB(0.5, 0.96, 0.08);
         c = {
-            r: 250 / 255,
-            g: 250 / 255,
-            b: 250 / 255
+            r: 50 / 255,
+            g: 50 / 255,
+            b: 50 / 255
         }
     }
     c.r *= 0.15;
