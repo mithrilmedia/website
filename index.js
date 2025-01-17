@@ -31,6 +31,8 @@ const mainWrapper = document.querySelector("#main");
 const modeChangeButton = document.querySelector('.mode-toggle-wrapper');
 let modeStatus = 'white';
 
+console.log('Loaded updated index.js');
+
 resizeCanvas();
 
 let config = {
