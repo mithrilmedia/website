@@ -1567,17 +1567,17 @@ function generateColor() {
     if (modeStatus == 'black') {
         // c = HSVtoRGB(180, 21.8, 98.8)
         c = {
-            r: 123 / 255,
-            g: 202 / 255,
-            b: 208 / 255
+            r: 36 / 255,
+            g: 176 / 255,
+            b: 185 / 255
         }
     }
     else if (modeStatus == 'white') {
         // c = HSVtoRGB(0.5, 0.96, 0.08);
         c = {
-            r: 123 / 255,
-            g: 202 / 255,
-            b: 208 / 255
+            r: 36 / 255,
+            g: 176 / 255,
+            b: 185 / 255
         }
     }
     c.r *= 0.15;
