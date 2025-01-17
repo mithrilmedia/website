@@ -1562,22 +1562,27 @@ function correctDeltaY(delta) {
 }
 
 function generateColor() {
-    let c;
-    if (modeStatus === 'black') {
-        // Dark gray for black mode
+    let c = HSVtoRGB(0.5, 0.96, 0.08);
+    // let c;
+    if (modeStatus == 'black') {
+        // c = HSVtoRGB(180, 21.8, 98.8)
         c = {
             r: 50 / 255,
             g: 50 / 255,
             b: 50 / 255
-        };
-    } else if (modeStatus === 'white') {
-        // Use the gradient's average color for white mode
+        }
+    }
+    else if (modeStatus == 'white') {
+        // c = HSVtoRGB(0.5, 0.96, 0.08);
         c = {
-            r: 80 / 255,  // #50BEB2
+            r: 80 / 255,
             g: 190 / 255,
             b: 178 / 255
-        };
+        }
     }
+    c.r *= 0.15;
+    c.g *= 0.15;
+    c.b *= 0.15;
     return c;
 }
 
