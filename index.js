@@ -1564,22 +1564,19 @@ function correctDeltaY(delta) {
 function generateColor() {
     let c;
     if (modeStatus === 'black') {
-        // Generate dark gray for black mode
+        // Dark gray for black mode
         c = {
-            r: 50 / 255,  // Dark gray (e.g., RGB: 50, 50, 50)
+            r: 50 / 255,
             g: 50 / 255,
             b: 50 / 255
         };
     } else if (modeStatus === 'white') {
-        // Generate light gray for white mode
+        // Use the gradient's average color for white mode
         c = {
-            r: 200 / 255, // Light gray (e.g., RGB: 200, 200, 200)
-            g: 200 / 255,
-            b: 200 / 255
+            r: 80 / 255,  // #50BEB2
+            g: 190 / 255,
+            b: 178 / 255
         };
-    } else {
-        // Default color if modeStatus is undefined or invalid
-        c = HSVtoRGB(0.5, 0.96, 0.08); // Example: fallback to original logic
     }
     return c;
 }
